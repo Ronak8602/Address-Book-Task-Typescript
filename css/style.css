@@ -1,0 +1,447 @@
+* {
+  font-family: "system-ui";
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+#heading {
+  margin: 2vh;
+  color: white;
+  font-size: 6vh;
+  font-weight: 200;
+  word-spacing: 2;
+}
+
+div.scaffold {
+  margin: 0px;
+  padding: 0px;
+}
+
+div.top {
+  background-color: rgb(51, 153, 203);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+ul.bar {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+  height: 4.5vh;
+}
+
+li {
+  float: left;
+}
+
+/* .navBarItems {
+  display: flex;
+  justify-content: start;
+} */
+
+li a {
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding: 14px 10px;
+  padding-right: 20px;
+  font-size: 2vh;
+  text-decoration: none;
+  line-height: 4.5vh;
+  vertical-align: middle;
+  padding-left: 16px;
+  cursor: pointer;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+li.icon {
+  padding-right: 16px;
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+img.icon {
+  height: 3vh;
+  width: 3vh;
+}
+
+div.body {
+  padding: 2vh 5vh 2vh 5vh;
+  display: flex;
+}
+
+.contactHeading {
+  font-weight: 700;
+  color: black;
+  font-size: 16px;
+}
+
+.contactBody {
+  display: flex;
+}
+
+.contactCard {
+  border: 1px solid rgb(217, 217, 217);
+  height: 90px;
+  width: 400px;
+  padding: 6px 10px 6px 10px;
+  cursor: pointer;
+}
+
+.contactCard:hover {
+  background-color: #cee7f2;
+}
+
+.contactName {
+  font-size: 32px;
+  font-weight: 200;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 6px;
+}
+
+.contactDetails {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 6px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.contactDetailCard {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+.noPaddingMargin {
+  padding: 0px;
+  margin: 0px;
+}
+
+.detailsStyle {
+  color: rgba(0, 0, 0, 0.8);
+  margin-right: 6px;
+}
+
+.contactDetailsHeading {
+  display: flex;
+  align-items: center;
+}
+
+.editIcon {
+  height: 16px;
+  width: 16px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.deleteIcon {
+  height: 32px;
+  margin-top: 6px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.editDiv {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  z-index: 1;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+.deleteDiv {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  z-index: 1;
+  margin-left: 32px;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+}
+
+.boldName {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.bar li a:hover {
+  background-color: #ff8800;
+  color: black;
+  box-shadow: inset 6px 0px 0px 0px white;
+}
+
+.addContactDialog {
+  visibility: hidden;
+  position: absolute;
+  width: 750px;
+  height: 550px;
+  box-shadow: 5px 5px 5px gray, -8px -8px 8px gray;
+  z-index: 1;
+  left: 35%;
+  background-color: white;
+  padding: 16px;
+}
+
+.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.show2 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.addContactInput {
+  border-radius: 0px;
+  border: 1px solid black;
+  height: 40px;
+  width: 80%;
+  margin-bottom: 16px;
+}
+
+.addContactRow {
+  width: 84%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.addContactInputHalfSize {
+  border-radius: 0px;
+  border: 1px solid black;
+  height: 40px;
+  width: 90%;
+}
+
+.addContactLabel {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.addContactWarning {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 4px;
+  margin-left: 16px;
+  font-weight: 700;
+  color: red;
+  font-size: 14px;
+}
+
+.labelRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.labelRowSmall {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+textarea {
+  border-radius: 0px;
+  border: 1px solid black;
+  height: 100px;
+  width: 80%;
+  margin-bottom: 16px;
+}
+
+.parent {
+  width: 50%;
+}
+
+.addButton {
+  background-color: #478c01;
+  border: none;
+  color: white;
+  padding: 6px 42px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  float: right;
+  margin-right: 4%;
+  visibility: hidden;
+}
+
+.updateButton {
+  background-color: #478c01;
+  border: none;
+  color: white;
+  padding: 6px 42px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  left: 80%;
+  visibility: hidden;
+}
+
+.cancelButton {
+  background-color: #478c01;
+  border: none;
+  color: white;
+  padding: 6px 42px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  left: 40%;
+}
+
+.showButton {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.emptyMessage {
+  color: red;
+  font-size: large;
+}
+
+@media only screen and (max-width: 914px) {
+  ul.bar {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+    background-color: #333;
+    height: 3vh;
+  }
+
+  li a {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    padding-right: 6px;
+    font-size: 1.6vw;
+    text-decoration: none;
+    line-height: 3vh;
+    vertical-align: middle;
+  }
+
+  img.icon {
+    height: 2vh;
+    width: 2vh;
+    padding-right: 0px;
+  }
+
+  #heading {
+    margin: 1.5vh;
+    color: white;
+    font-size: 4vh;
+    font-weight: 200;
+    word-spacing: 2;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  ul.bar {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 0px 0px 0vh;
+    overflow: hidden;
+    background-color: #333;
+    height: 3vh;
+  }
+
+  li a {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    padding-right: 6px;
+    font-size: 3vw;
+    text-decoration: none;
+    line-height: 3vh;
+    vertical-align: middle;
+  }
+
+  li.icon {
+    float: right;
+    line-height: 3vh;
+    vertical-align: middle;
+    padding: 0px;
+    padding-right: 10px;
+  }
+  img.icon {
+    height: 2vh;
+    width: 2vh;
+  }
+
+  #heading {
+    margin: 1.5vh;
+    color: white;
+    font-size: 5vh;
+    font-weight: 200;
+    word-spacing: 2;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  ul.bar {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 0px 0px 1vh;
+    overflow: hidden;
+    background-color: #333;
+    height: 3vh;
+  }
+
+  li a {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    padding-right: 6px;
+    font-size: 3vw;
+    text-decoration: none;
+    line-height: 3vh;
+    vertical-align: middle;
+  }
+  li.icon {
+    float: right;
+    padding: 2px 10px 2px 0px;
+  }
+  img.icon {
+    height: 14px;
+    width: 14px;
+  }
+
+  #heading {
+    margin: 1vh;
+    margin-left: 2vh;
+    color: white;
+    font-size: 4vh;
+    font-weight: 200;
+    word-spacing: 2;
+  }
+}
